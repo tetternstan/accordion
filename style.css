@@ -1,0 +1,126 @@
+/* 1. Global defaults */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Make sure the hidden attribute always wins */
+[hidden] {
+    display: none !important;
+}
+
+/* 2. Header */
+header {
+    background-color: #111827;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    font-size: 28px;
+}
+
+/* 3. Footer */
+footer {
+    background-color: #111827;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+footer p {
+    color: #ccc;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* 4. Main */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+/* 5. The FAQ card */
+.faq {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 28px;
+    border-radius: 16px;
+}
+
+.faq h2 {
+    margin-top: 0;
+}
+
+.faq-intro {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* 6. Accordion: the button and JavaScript version (index.html) */
+.accordion h3 {
+    margin: 0 0 10px;
+    font-size: 1rem;
+}
+
+.accordion button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #111827;
+    border-radius: 8px;
+    background-color: #111827;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+}
+
+.accordion button:hover {
+    background-color: #1f2937;
+}
+
+.accordion button:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 2px;
+}
+
+.accordion .arrow {
+    transition: transform 0.2s ease;
+}
+
+/* The arrow turns when the question is open, styled from aria-expanded */
+.accordion button[aria-expanded="true"] .arrow {
+    transform: rotate(180deg);
+}
+
+.accordion [role="region"] {
+    border: 2px solid #111827;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 0 0 10px;
+}
+
+.accordion [role="region"] p {
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}

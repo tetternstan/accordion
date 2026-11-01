@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion FAQ</title>
+    <meta name="description"
+        content="A frequently asked questions accordion. Clicking a question opens its answer and closes the other answers.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Code Start</h1>
+    </header>
+
+    <main>
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <p class="faq-intro">Here are some of the questions new coders ask.</p>
+
+            <div class="accordion">
+
+                <h3>
+                    <button type="button" id="question-1" aria-expanded="true" aria-controls="answer-1">
+                        <span>Do I need to be good at maths to learn coding?</span>
+                        <span class="arrow" aria-hidden="true">&#9662;</span>
+                    </button>
+                </h3>
+                <div id="answer-1" role="region" aria-labelledby="question-1">
+                    <p>No. Most web development only uses simple arithmetic and logic. Maths helps in some fields, like
+                        graphics and data science, but you can start without it.</p>
+                </div>
+
+                <h3>
+                    <button type="button" id="question-2" aria-expanded="false" aria-controls="answer-2">
+                        <span>Which language should I learn first?</span>
+                        <span class="arrow" aria-hidden="true">&#9662;</span>
+                    </button>
+                </h3>
+                <div id="answer-2" role="region" aria-labelledby="question-2" hidden>
+                    <p>For websites, start with HTML and CSS, then JavaScript. They run in every browser and need no
+                        installation.</p>
+                </div>
+
+                <h3>
+                    <button type="button" id="question-3" aria-expanded="false" aria-controls="answer-3">
+                        <span>How long does it take to learn web development?</span>
+                        <span class="arrow" aria-hidden="true">&#9662;</span>
+                    </button>
+                </h3>
+                <div id="answer-3" role="region" aria-labelledby="question-3" hidden>
+                    <p>The basics take a few months of regular practice. Feeling comfortable takes longer. Building
+                        small projects teaches faster than only reading.</p>
+                </div>
+
+                <h3>
+                    <button type="button" id="question-4" aria-expanded="false" aria-controls="answer-4">
+                        <span>Do I need an expensive computer?</span>
+                        <span class="arrow" aria-hidden="true">&#9662;</span>
+                    </button>
+                </h3>
+                <div id="answer-4" role="region" aria-labelledby="question-4" hidden>
+                    <p>No. A basic laptop, a browser, and a free editor like VS Code are enough to start.</p>
+                </div>
+
+                <h3>
+                    <button type="button" id="question-5" aria-expanded="false" aria-controls="answer-5">
+                        <span>What is the best way to practice?</span>
+                        <span class="arrow" aria-hidden="true">&#9662;</span>
+                    </button>
+                </h3>
+                <div id="answer-5" role="region" aria-labelledby="question-5" hidden>
+                    <p>Build small projects, break them on purpose, and fix them. Push each one to GitHub, so you can
+                        see your progress.</p>
+                </div>
+
+                <h3>
+                    <button type="button" id="question-6" aria-expanded="false" aria-controls="answer-6">
+                        <span>What should I do when my code does not work?</span>
+                        <span class="arrow" aria-hidden="true">&#9662;</span>
+                    </button>
+                </h3>
+                <div id="answer-6" role="region" aria-labelledby="question-6" hidden>
+                    <p>Read the error message, check the Console in the browser, change one thing at a time, and search
+                        for the exact error text.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2026 Code Start</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
